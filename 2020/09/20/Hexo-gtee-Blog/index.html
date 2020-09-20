@@ -7,15 +7,24 @@
   
   <title>Hexo+gtee-Blog | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hexo+码云+git快速搭建免费的静态Bloghexo静态网站 发布于 2018-08-20 作为一个对技术有着热情渴望的前端小白，对于写Blog这种事也是跃跃欲试。于是乎赶紧从网上搜罗了一堆搭建个人Blog的方法，对比了下，最后倾心于Hexo这个博客框架，搭配Github&#x2F;码云的page服务，可以轻松搭建一个炫酷又不失优雅的静态Blog（还是完全免费的） 前期准备工作 去Git官网，下载安装G">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+gtee-Blog">
 <meta property="og:url" content="http://example.com/2020/09/20/Hexo-gtee-Blog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo+码云+git快速搭建免费的静态Bloghexo静态网站 发布于 2018-08-20 作为一个对技术有着热情渴望的前端小白，对于写Blog这种事也是跃跃欲试。于是乎赶紧从网上搜罗了一堆搭建个人Blog的方法，对比了下，最后倾心于Hexo这个博客框架，搭配Github&#x2F;码云的page服务，可以轻松搭建一个炫酷又不失优雅的静态Blog（还是完全免费的） 前期准备工作 去Git官网，下载安装G">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083268">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083269">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083270">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083271">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083272">
+<meta property="og:image" content="https://segmentfault.com/img/remote/1460000016083273">
 <meta property="article:published_time" content="2020-09-20T07:39:52.000Z">
-<meta property="article:modified_time" content="2020-09-20T07:39:52.939Z">
+<meta property="article:modified_time" content="2020-09-20T07:55:43.575Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://segmentfault.com/img/remote/1460000016083268">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,11 +95,107 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Hexo-码云-git快速搭建免费的静态Blog"><a href="#Hexo-码云-git快速搭建免费的静态Blog" class="headerlink" title="Hexo+码云+git快速搭建免费的静态Blog"></a><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000016083265">Hexo+码云+git快速搭建免费的静态Blog</a></h1><p><a target="_blank" rel="noopener" href="https://segmentfault.com/t/hexo">hexo</a><a target="_blank" rel="noopener" href="https://segmentfault.com/t/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99">静态网站</a></p>
+<p>发布于 2018-08-20</p>
+<p>作为一个对技术有着热情渴望的前端小白，对于写Blog这种事也是跃跃欲试。于是乎赶紧从网上搜罗了一堆搭建个人Blog的方法，对比了下，最后倾心于Hexo这个博客框架，搭配Github/码云的page服务，可以轻松搭建一个炫酷又不失优雅的静态Blog（还是完全免费的）</p>
+<h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><ul>
+<li>去Git官网，下载安装<code>Git</code>（版本控制系统）</li>
+<li>去Node.js官网，下载安装<code>Node.js</code>（自带NPM包管理工具，另外Hexo是基于Node.js的）</li>
+<li>注册一个<code>码云或Github账号</code>（提供page服务）</li>
+<li>有一个经常<code>阅读官方文档</code>的好习惯（一些简单的安装自行去看官方教程，这里不会啰嗦）</li>
+</ul>
+<h2 id="为什么选择Hexo-码云"><a href="#为什么选择Hexo-码云" class="headerlink" title="为什么选择Hexo+码云"></a>为什么选择Hexo+码云</h2><ul>
+<li><p>Hexo主打快速、简洁和高效，安装过程简单，关键是它的模板主题非常华丽亮眼（这或许也是Hexo吸引了众多妹子程序媛的原因）</p>
+<blockquote>
+<p>我们可以看看Hexo官方对自家的定义：<br>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+</li>
+<li><p>至于码云 vs Github方面，码云作为国内网站，访问速度自然是比Github快一些，且更容易被SEO收录提升博客的曝光率。</p>
+</li>
+</ul>
+<h2 id="第一步：Hexo安装与测试"><a href="#第一步：Hexo安装与测试" class="headerlink" title="第一步：Hexo安装与测试"></a>第一步：Hexo安装与测试</h2><p>1.请先安装好Git和Node.js</p>
+<p>2.安装Hexo：使用cmd命令行，<code>输入下列命令</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>3.指定一个文件夹存放你的Blog文件（也就是根目录）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;  # &lt;folder&gt;替换成你的文件夹地址，在这个地址里生成Hexo初始化文件</span><br><span class="line">$ cd &lt;folder&gt;  # 进入这个文件夹</span><br><span class="line">$ npm install  # 在文件夹内自动安装Hexo所依赖的各种模块</span><br></pre></td></tr></table></figure>
+
+<p>经过以上3步，Hexo就初始化成功了，下面我们进行一下本地测试</p>
+<p>4.生成静态页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>5.本地测试：开启服务器</p>
+<p>Hexo 3.0 把服务器独立成了个别模块，所以我们必须先安装 hexo-server 才能使用server</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后，以后我们只需要使用下面的命令就可以开启服务器了，开启后默认的网站访问地址为：<code>http://localhost:4000</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>简单的5步，一个最原始的本地Hexo博客就已经搭建好了。浏览器输入<code>http://localhost:4000</code>就可以看到类似如下效果。</p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083268" alt="img"></p>
+<h2 id="第二步：Hexo部署前的准备工作"><a href="#第二步：Hexo部署前的准备工作" class="headerlink" title="第二步：Hexo部署前的准备工作"></a>第二步：Hexo部署前的准备工作</h2><p>在localhost:4000新鲜够了没？接下来就是真刀真枪的干了，我们这里使用码云进行Blog的部署(Github也是类似的方法)。</p>
+<p>1.登录码云，新建一个项目。</p>
+<blockquote>
+<p>如果想以<code>http://xuek.gitee.io</code>这种一级域名的形式访问bolg，那么我们需要建立一个与自己个性地址同名的项目，如 <code>https://gitee.com/xuek</code> 这个用户，在创建项目时<strong>项目名称</strong>应该为<code>xuek</code>。</p>
+</blockquote>
+<p>2.在克隆/下载中，复制HTTPS里的链接。</p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083269" alt="img"></p>
+<p>3.找到Blog本地的根目录里的_config.yml文件，找到deploy这一项，将之前复制的HTTPS里的链接复制到repo后面，然后修改type的值为git，然后保存即可。</p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083270" alt="img"></p>
+<p>经过以上3步，我们就将码云和本地的Blog建立了连接，那么我们该怎么将Blog部署到码云上呢？别急，接下来就到git登场了。</p>
+<h2 id="第三步：使用git对Blog进行版本控制"><a href="#第三步：使用git对Blog进行版本控制" class="headerlink" title="第三步：使用git对Blog进行版本控制"></a>第三步：使用git对Blog进行版本控制</h2><p>1.在Blog根目录单击右键，选择<code>Git Bash here</code></p>
+<blockquote>
+<p>git bash就是模拟出来的小型Linux命令行</p>
+</blockquote>
+<p>2.如果是第一次使用git的话，要先配置一下我们git的基本信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name+空格+你的名字(最好和码云的一样)</span><br><span class="line">$ git config --global user.email+空格+你的邮箱(最好和码云的一样)</span><br></pre></td></tr></table></figure>
+
+<p>3.接下来我们就可以在Git Bash中初始化git，把Blog根目录变成一个git可以管理的仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以使用git管理你的Blog版本了，更多关于git的使用参见: <a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰的git教程</a></p>
+<h2 id="第四步：部署Hexo到码云"><a href="#第四步：部署Hexo到码云" class="headerlink" title="第四步：部署Hexo到码云"></a>第四步：部署Hexo到码云</h2><p>万事俱备，只欠东风。你有没有发现githexo码云这三者已经关联起来了？好了，下面我们将用git把Hexo部署在码云上</p>
+<p>1.在Blog根目录下安装Hexo的Git部署插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>2.安装好了Git部署插件之后，我们就可以输入命令一键部署了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>之后会弹出一个对话框，让我们输入码云的帐号和密码（稍后我们会配置网站的SSH，这样就不用每次都输入账号密码了）</p>
+<h2 id="第五步：使用码云的page服务"><a href="#第五步：使用码云的page服务" class="headerlink" title="第五步：使用码云的page服务"></a>第五步：使用码云的page服务</h2><p>1.进入我们码云的项目里，会发现Blog的静态文件已经上传到项目中了</p>
+<p>2.选择<code>服务—&gt;Gitee Pages</code>，我们使用master分支，然后直接点“启动”，即可启动page服务。<br>更多关于码云page的说明可参考官网：<a target="_blank" rel="noopener" href="http://git.mydoc.io/?t=154714">码云Gitee帮助文档</a></p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083271" alt="img"></p>
+<p>大功告成！点击网站地址就可以进入属于你自己的Blog了！</p>
+<p>不过我们可没有结束，一切才刚刚开始..</p>
+<h2 id="第六步：配置SSH"><a href="#第六步：配置SSH" class="headerlink" title="第六步：配置SSH"></a>第六步：配置SSH</h2><p>有了免费的服务器(page)之后，我们还可以把它和我们个人电脑作一个绑定，以后使用git通讯就不用总是输入账号密码，自然方便多了！</p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083272" alt="img"></p>
+<p>这里不啰嗦了，最完美的配置SSH教程参见官网：<a target="_blank" rel="noopener" href="http://git.mydoc.io/?t=154712">生成并部署SSH key</a></p>
+<h2 id="第七步：安装主题"><a href="#第七步：安装主题" class="headerlink" title="第七步：安装主题"></a>第七步：安装主题</h2><p>Hexo使用者乐此不疲的地方就在于它各种炫酷的主题了，不过Hexo官网那点主题不够看，更多的还是移步这里：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24422335">有哪些好看的 Hexo 主题？</a></p>
+<p>Hexo的主题基本是傻瓜式安装，只需要将主题文件复制到Blog根目录的themes文件夹下， 然后修改下_config.yml站点配置文件即可：</p>
+<p><img src="https://segmentfault.com/img/remote/1460000016083273" alt="img"></p>
+<p>这里我们使用了Next主题，具体的安装和使用方法参见官网：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">NexT使用文档</a></p>
+<h2 id="第八步：新建文章"><a href="#第八步：新建文章" class="headerlink" title="第八步：新建文章"></a>第八步：新建文章</h2><p>1.使用下面的命令生成一篇新文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
+
+<p>2.生成的新文章都在<code>\source\_posts\title.md</code>目录下，打开后注意理解下顶部的模板参数，其他自行编辑即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World  &#x2F;&#x2F; 文章标题</span><br><span class="line">date: 2018-07-11 23:49:28  &#x2F;&#x2F; 文章生成时间，一般默认即可</span><br><span class="line">categories: text   &#x2F;&#x2F; 文章分类目录，可使用[a,b,c]表示多个分类</span><br><span class="line">tags: [Hexo,text]   &#x2F;&#x2F; 文章标签</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 正文部分，使用markdown进行书写。</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt; </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 如果设置了阅读全文选项，则more标签以下的内容在首页会被“阅读全文”字样隐藏</span><br></pre></td></tr></table></figure>
+
+<p>3.文章修改后可依照前面的方法先在本地 <code>http://localhost:4000</code> 进行预览（每次需要重新启动下sever），至于正式更新到网站上还需要看下一步。</p>
+<h2 id="第九步：-更新Blog"><a href="#第九步：-更新Blog" class="headerlink" title="第九步： 更新Blog"></a>第九步： 更新Blog</h2><p>1.清除缓存文件 (db.json) 和已生成的静态文件 (public)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>2.重新生成静态文件并自动部署到网站</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy # 可以简写为hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上就是基于Hexo搭建Blog的一些基础性内容。这个教程也只是把思路理顺了一下，权当是一个分享，文章若有错误之处还请多多指点。</p>
+<p>一个Blog的搭建过程看似简单，但其中用到的知识却非常广泛，也需要花费些时间仔细阅读下各个官方文档，不仅要知道怎么用，还要知道为何这么用，这也是我们下一步要继续研究的。</p>
+<p>万里长征才走了第一步，接下来就是有趣但也是非常具有挑战性的事————个性化我们的Blog。关于Blog主题的美化和个性化，就是一个浩大的工程了，网上关于Next主题优化的进阶教程非常多，有兴趣的可以尝试下，这里就暂时不做讨论了，日后有需要再另作一文。</p>
+<p>阅读 4.1k 更新于 2018-08-20</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/20/Hexo-gtee-Blog/" data-id="ckfat004r0000xpjrag226tfq" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/09/20/Hexo-gtee-Blog/" data-id="ckfat3oej0002fjjr5pzc2n5t" class="article-share-link">Share</a>
       
       
     </footer>
